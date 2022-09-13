@@ -4,7 +4,7 @@
 Summary:	Program to write hybrid ISO files onto USB disks
 Name:		isoimagewriter
 Version:	0.8
-Release:	0.%{git}.1
+Release:	0.%{git}.2
 License:	GPLv3+
 Group:		File tools
 Url:		https://invent.kde.org/utilities/isoimagewriter
