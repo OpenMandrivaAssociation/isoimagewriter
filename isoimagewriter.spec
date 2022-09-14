@@ -30,7 +30,7 @@ Requires:	kauth
 ISO Image Writer is a tool to write a .iso file to a USB disk.
 
 %prep
-%autosetup -n %{name}-master-%{git} -p1
+%autosetup -n %{name}-%{git} -p1
 %cmake_kde5
 
 %build
