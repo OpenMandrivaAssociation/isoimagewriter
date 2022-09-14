@@ -12,7 +12,6 @@ Url:		https://invent.kde.org/utilities/isoimagewriter
 # git archive --format=tar.gz -o ../isoimagewriter-0.8-$(date +%Y%m%d).tar.gz --prefix=isoimagewriter-master-%gitcommit/ master
 Source0:	https://invent.kde.org/utilities/isoimagewriter/-/archive/%{name}-%{version}-%{git}.tar.gz
 
-BuildRequires:  ninja
 BuildRequires:  cmake(qt6)
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5I18n)
@@ -37,10 +36,10 @@ ISO Image Writer is a tool to write a .iso file to a USB disk.
 %cmake
 
 %build
-%ninja -C build
+%make_build
 
 %install
-%ninja_install -C build
+%make_install -C build
 
 %files
 %dir %{_datadir}/%{name}
