@@ -35,9 +35,9 @@ ISO Image Writer is a tool to write a .iso file to a USB disk.
 
 %prep
 %autosetup -n %{name}-%{version}-%{git} -p1
-%cmake
 
 %build
+%cmake
 %make_build
 
 %install
