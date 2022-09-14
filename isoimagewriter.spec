@@ -12,7 +12,9 @@ Url:		https://invent.kde.org/utilities/isoimagewriter
 # git archive --format=tar.gz -o ../isoimagewriter-0.8-$(date +%Y%m%d).tar.gz --prefix=isoimagewriter-master-%gitcommit/ master
 Source0:	https://invent.kde.org/utilities/isoimagewriter/-/archive/%{name}-%{version}-%{git}.tar.gz
 
-BuildRequires:  cmake(qt6)
+BuildRequires:	cmake
+BuildRequires:	cmake(qt6)
+BuildRequires:	qmake-qt6
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5CoreAddons)
