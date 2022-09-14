@@ -1,10 +1,10 @@
-%define git 20211015
+%define git 20220905
 %define gitcommit 12bcf4045a52eab5c48a672e37722065633af0f6
 
 Summary:	Program to write hybrid ISO files onto USB disks
 Name:		isoimagewriter
 Version:	0.8
-Release:	0.%{git}.2
+Release:	0.%{git}.1
 License:	GPLv3+
 Group:		File tools
 Url:		https://invent.kde.org/utilities/isoimagewriter
@@ -22,8 +22,8 @@ BuildRequires:	cmake(KF5Auth)
 BuildRequires:	cmake(KF5Solid)
 BuildRequires:	cmake(Gpgmepp)
 BuildRequires:	pkgconfig(udev)
-BuildRequires:	pkgconfig(Qt5Network)
-BuildRequires:	pkgconfig(Qt5Widgets)
+BuildRequires:	cmake(Qt6Network)
+BuildRequires:	cmake(Qt6Widgets)
 Requires:	kauth
 
 %description
