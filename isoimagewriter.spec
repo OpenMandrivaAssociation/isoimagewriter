@@ -1,10 +1,10 @@
-%define git 20211015
-%define gitcommit 12bcf4045a52eab5c48a672e37722065633af0f6
+%define git 20230102
+%define gitcommit cd1fbde1b24c3963b313fd57dc623dd156447934
 
 Summary:	Program to write hybrid ISO files onto USB disks
 Name:		isoimagewriter
 Version:	0.8
-Release:	0.%{git}.2
+Release:	0.%{git}.3
 License:	GPLv3+
 Group:		File tools
 Url:		https://invent.kde.org/utilities/isoimagewriter
@@ -31,7 +31,7 @@ ISO Image Writer is a tool to write a .iso file to a USB disk.
 
 %prep
 %autosetup -n %{name}-master-%{gitcommit} -p1
-%cmake_kde5
+%cmake_kde5 -DUSE_KAUTH=ON
 
 %build
 %ninja -C build
