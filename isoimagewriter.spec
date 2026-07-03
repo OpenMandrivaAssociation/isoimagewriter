@@ -3,7 +3,7 @@
 
 Summary:	Program to write hybrid ISO files onto USB disks
 Name:		isoimagewriter
-Version:	26.04.2
+Version:	26.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv3+
 Group:		File tools
